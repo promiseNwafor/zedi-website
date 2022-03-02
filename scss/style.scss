@@ -159,6 +159,15 @@ header {
   @media (max-width: 580px) {
     .hero {
       height: 90vh;
+
+      button {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+        span {
+          margin-right: 5px !important;
+        }
+      }
     }
   }
 

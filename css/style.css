@@ -12147,6 +12147,13 @@ header .hero button span {
   header .hero {
     height: 90vh;
   }
+  header .hero button {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  header .hero button span {
+    margin-right: 5px !important;
+  }
 }
 
 header .custom-shape-divider-bottom-1646165309 {
