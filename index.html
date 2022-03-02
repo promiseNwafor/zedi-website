@@ -21,10 +21,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Document</title>
   </head>
 
-  <body>
+  <body x-data>
     <header>
       <div class="curved-end position-relative">
         <div class="container">
@@ -43,10 +45,10 @@
           </nav>
 
           <div class="hero row align-items-center">
-            <div class="col-9">
-              <h1 class="pr-2">Your Brand + Zedi Africa = The Next Level.</h1>
-              <p class="my-3 mt-4 fs-5">You are not here by accident, you’re here because your brand needs a partner that is able to take it to the next level and turn it into one everybody loves.</p>
-              <button class="btn btn-info px-4 my-5">
+            <div class="col-md-9">
+              <h1 class="pr-2" x-intersect="$el.classList.add('fadeInUp')">Your Brand + Zedi Africa = The Next Level.</h1>
+              <p class="my-3 mt-4 fs-5" x-intersect="$el.classList.add('fadeInUp')">You are not here by accident, you’re here because your brand needs a partner that is able to take it to the next level and turn it into one everybody loves.</p>
+              <button class="btn btn-info px-4 my-5" x-intersect="$el.classList.add('fadeInUp')">
                 <span>Let’s Kickstart our relationship</span> <i class="fa fa-arrow-right"></i>
               </button>
             </div>
@@ -73,7 +75,7 @@
         <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="gradient-title">How we do things at Zedi</h2>
+            <h2 class="gradient-title" x-intersect="$el.classList.add('fadeInUp')">How we do things at Zedi</h2>
             <!-- <p class="my-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
               dui aliquam semper et ut nulla vel at ut. Sapien, lacinia urna
@@ -82,9 +84,10 @@
           </div>
         </div>
         <div class="row mt-5 text-center">
-          <div class="col pr-5">
-            <div class="">
-              <img src="./assets/images/check-square.png" alt="icon" />
+          <div class="col-md-4">
+          <div class="p-4">
+            <div class="frame">
+              <img src="./assets/images/unsplash_mr4JG4SYOF8.png" class="img-fluid" alt="icon" />
             </div>
             <div class="">
               <h4 class="my-3 fw-bolder">We find problems</h4>
@@ -92,10 +95,12 @@
             <p class="">
                 We love finding problems, because the better the problems we find, the better the solutions we create for your brands. And we don’t just find problems, we use research and insights to find the right problems.            </p>
           </div>
+          </div>
 
-          <div class="col px-5">
-            <div class="">
-              <img src="./assets/images/Vector (Stroke).png" alt="icon" />
+          <div class="col-md-4">
+            <div class="p-4">
+            <div class="frame">
+              <img src="./assets/images/unsplash_mr4JG4SYOF8.png" class="img-fluid" alt="icon" />
             </div>
             <div class="">
                 <h4 class="my-3 fw-bolder">We solve them creatively</h4>
@@ -104,9 +109,11 @@
             </div>
             
           </div>
-          <div class="col pl-5">
-            <div class="">
-              <img src="./assets/images/clock.png" alt="icon" />
+          </div>
+          <div class="col-md-4">
+            <div class="p-4">
+            <div class="frame">
+              <img src="./assets/images/unsplash_mr4JG4SYOF8.png" class="img-fluid" alt="icon" />
             </div>
             <div class="">
                 <h4 class="my-3 fw-bolder">We bring ambitions to life</h4>
@@ -114,6 +121,7 @@
               <p class="">
                 Working with us is a partnership - We’ll go to any length to not just solve your problems, but ensure that it als results in bringing your business goals and brand ambitions to life.              </p>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -127,14 +135,15 @@
         </div>
         <div class="container pb-5">
             <div class="row py-4">
-                <div class="col-6">
-                  <h2 class="gradient-title">What you can enjoy when you work with us</h2>
+                <div class="col-md-6">
+                  <h2 class="gradient-title" x-intersect="$el.classList.add('fadeInUp')">What you can enjoy when you work with us</h2>
                 </div>
-                <div class="col">
+                <div class="col-md-6">
                 </div>
               </div>    
-        <div class="row py-5">
-          <div class="col box p-4">
+        <div class="row py-5 g-4">
+          <div class="col-md-4">
+          <div class="box box-1 p-4">
             <div class="pt-2">
               <img src="./assets/images/Frame 250.png" alt="icon" />
             </div>
@@ -144,8 +153,10 @@
             <p class="">
                 We execute and implement strategies via digital platforms to help brands succeed. We utilize channels, unique ideas and pinpoint execution digitally for the best results for businesses.            </p>
           </div>
+          </div>
 
-          <div class="col box mx-4 p-4">
+          <div class="col-md-4">
+            <div class="box p-4">
             <div class="">
               <img src="./assets/images/Frame 250.png" alt="icon" />
             </div>
@@ -155,7 +166,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna mauris, amet vel ullamcorper amet nisi, bibendum. At at pretium, faucibus diam habitant elementum sed.            </div>
             
           </div>
-          <div class="col box p-4">
+          </div>
+          <div class="col-md-4">
+            <div class="box p-4">
             <div class="">
               <img src="./assets/images/Frame 250.png" alt="icon" />
             </div>
@@ -166,6 +179,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna mauris, amet vel ullamcorper amet nisi, bibendum. At at pretium, faucibus diam habitant elementum sed.            </p>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
@@ -174,15 +188,15 @@
     <section id="projects">
         <div class="container text-light">
             <div class="row pb-5 align-items-center justify-content-end">
-                <div class="col-7">
+                <div class="col-md-7">
                   <h1 class="fs-1">Case Studies / Projects</h1>
                   <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, ac elit, interdum eget ac feugiat. Congue ipsum imperdiet maecenas mollis morbi bibendum risus.</p>
                   
                 </div>
-                <div class="col-2">
+                <div class="col-md-2">
                     
                 </div>
-                <div class="col d-flex justify-content-end">
+                <div class="col-md d-md-flex justify-content-end">
                     <button class="btn btn-info text-light mt-5">
                         See All Case Studies
                       </button>
@@ -190,22 +204,22 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col px-4">
+                <div class="col-md-4 px-4">
                     <div class="">
-                        <img src="./assets/images/image 1.png" class="rounded" alt="image of a boy" />
+                        <img src="./assets/images/image 1.png" class="rounded" x-intersect="$el.classList.add('scale')" alt="image of a boy" />
                       </div>
                       <div class="my-3">
                           <h5 class="">Case Study 1</h5>
-                          <p class="mb-3 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
+                          <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
                           <a href="#" class="text-light fs-6"><span>Read More</span> <i class="fa fa-angle-right"></i></a>
 
                       </div>
                 </div>
-                <div class="col px-4">
+                <div class="col-md-4 px-4">
                     <div class="d-flex flex-column">
                         <div class="my-3">
                             <h5 class="">Case Study 2</h5>
-                            <p class="mb-3 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
                             <a href="#" class="text-light fs-6"><span>Read More</span> <i class="fa fa-angle-right"></i></a>
   
                         </div>
@@ -214,17 +228,17 @@
                         </div>
                         <div class="my-3">
                             <h5 class="">Case Study 3</h5>
-                            <p class="mb-3 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
                             <a href="#" class="text-light fs-6"><span>Read More</span> <i class="fa fa-angle-right"></i></a>
   
                         </div>
                     </div>
                 </div>
-                <div class="col px-4">
+                <div class="col-md-4 px-4">
                     <div class="d-flex flex-column">
                         <div class="my-3">
                             <h5 class="">Case Study 4</h5>
-                            <p class="mb-3 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
                             <a href="#" class="text-light fs-6"><span>Read More</span> <i class="fa fa-angle-right"></i></a>
   
                         </div>
@@ -233,7 +247,7 @@
                         </div>
                         <div class="my-3">
                             <h5 class="">Case Study 5</h5>
-                            <p class="mb-3 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel turpis iaculis dapibus.</p>
                             <a href="#" class="text-light fs-6"><span>Read More</span> <i class="fa fa-angle-right"></i></a>
   
                         </div>
@@ -269,7 +283,7 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col">
-                    <h3 class="text-center">Customer testimonial</h3>
+                    <h3 class="text-center fs-1">Customer testimonial</h3>
                 </div>
             </div>
         </div>

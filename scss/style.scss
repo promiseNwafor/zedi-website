@@ -15,13 +15,14 @@ $info: #d5569a;
 $link-color: $primary-light;
 $h6-font-size: 12px;
 
-@import "../node_modules//bootstrap/scss/bootstrap";
+// @import "../node_modules//bootstrap/scss/bootstrap";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  // overflow: hidden;
 }
 
 .gradient-title {
@@ -54,6 +55,43 @@ ul {
   }
 }
 
+.fadeInUp {
+  animation: fadeInUp 1s;
+}
+
+.scale {
+  animation: scale 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .fadeInUp,
+  .scale {
+    animation: none;
+  }
+}
+
 header {
   background: $gradient-color;
   color: $text-light;
@@ -61,6 +99,16 @@ header {
   .hero {
     font-family: Gilroy, "Poppins";
     height: 120vh;
+
+    .translate-y-full {
+      transition-duration: 1s;
+      transform: translateY(100px);
+    }
+
+    .translate-y-0 {
+      transition-duration: 1s;
+      transform: translateY(0%);
+    }
 
     button {
       color: $text-light !important;
@@ -105,6 +153,10 @@ header {
 
 #mission {
   padding: 6rem 0;
+
+  .frame {
+    // background-color: #f0eaff;
+  }
 }
 
 #services {
@@ -119,6 +171,12 @@ header {
     background: $text-light;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
+  }
+
+  .box-1 {
+    h4 {
+      padding-right: 4rem;
+    }
   }
 
   //   curved
