@@ -12173,6 +12173,12 @@ header .ellipse img {
   header .hero button span {
     margin-right: 5px !important;
   }
+  header .ellipse img {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    bottom: -7%;
+    right: 0%;
+  }
 }
 
 header .custom-shape-divider-bottom-1646165309 {
@@ -12290,6 +12296,12 @@ header .custom-shape-divider-bottom-1646165309 .shape-fill {
   #services .services .row {
     padding-top: 1rem !important;
     padding-bottom: 0 !important;
+  }
+  #services .services .ellipse {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    right: 20%;
+    top: -2%;
   }
 }
 
