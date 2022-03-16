@@ -100,8 +100,12 @@ ul {
 }
 
 header {
-  background: url("../assets/images/bg.svg") no-repeat center center/cover;
+  background: url("../assets/images/bg1.svg") no-repeat center center/cover;
   color: $text-light;
+
+  nav.fluid {
+    padding: 10px 6rem;
+  }
 
   nav {
     background: $text-light;
@@ -119,6 +123,10 @@ header {
     a {
       font-size: 1.1rem !important;
       font-weight: 500;
+
+      &:hover {
+        color: $danger !important;
+      }
     }
 
     a.navbar-brand {
@@ -138,10 +146,10 @@ header {
     }
 
     button {
-      // color: $text-light !important;
+      color: #fff !important;
 
-      span {
-        margin-right: 10px !important;
+      &:hover {
+        color: $danger;
       }
     }
     @media (max-width: 1180px) {
