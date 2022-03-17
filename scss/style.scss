@@ -109,6 +109,9 @@ header {
 
   nav {
     background: $text-light;
+    position: sticky !important;
+    top: 0;
+    z-index: 20;
 
     .navbar-toggler {
       border: 3px solid gray !important;
